@@ -1,0 +1,107 @@
+ .work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+}
+/* navbar style */
+header{
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A0B2E;
+    
+}
+
+.nav-main a{
+ text-decoration: none;
+ color: white;
+
+}
+.nav-main li {
+    display: inline;
+    margin-right: 30px;
+    color: white;
+}
+.nav-logo{
+    color: white;
+}
+.nav-btn button{
+    padding: 13px 12px;
+    border-radius: 26px;
+    font-weight: 500;
+    
+}
+
+/* banner part */
+.bg-main{
+    width: 100%;
+}
+
+
+/* about section */
+.about{
+    background-color: #1A0B2E;
+    
+}
+.about-content{
+    text-align: center;
+   color: aliceblue;
+
+}
+.about-content p{
+    max-width: 700px;
+    margin: auto;
+    font-size: smaller;
+    padding-bottom: 20px;
+}
+.about-content .last{
+    margin-bottom: 40px;
+    border-bottom: 1px solid ;
+    padding-bottom: 40px;
+}
+.about-conteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    
+}
+.card h1{
+    color: #00FF88;
+}
+.card p{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive style */
+@media  screen and (max-width:576px) {
+    .nav-main, .nav-btn{
+        display: none;
+    }
+
+    .about-conteiner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+/* out of silebus */
+@media screen and (min-width:576px) {
+    nav img{
+        display: none;
+    }
+}
