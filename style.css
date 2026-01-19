@@ -191,14 +191,16 @@ nav{
 /* video part */
 .video-section{
     background-color: #1A0B2E;
-    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 20px;
 }
 .video-conteiner{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
+   
     justify-items: center;
-    width: 100%;
+    width: 85%;
+    margin: auto;
 }
 .video-card{
     max-width: 300px;
@@ -231,9 +233,73 @@ nav{
     font-weight: 600;
     color: #00FF88;
 }
+.host-conteiner{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #250D44;
+    width: 71%;
+    margin: auto;
+    padding: 20px;
+    gap: 12px;
+    border-radius: 25px;
+    color: #FFFFFF;
+    
 
+}
+.host-content ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-top: 20px;
+}
+.host-content h2{
+    font-weight: 600;
+}
+.host-content p{
+    font-size: 0.8rem;
+}
 
+.host-content li{
+    border: 0.1px solid grey ;
+    padding: 8px 8px 4px;
+    border-radius: 50%;
+}
+/* this is footer part */
+footer{
+    padding-top: 50px;
+    width: 100%;
+    background: url(B13-A02-TechWave/assets/footer-bg.png) no-repeat center center/cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+   
+    text-align: center;
 
+}
+footer h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+.icon ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    gap: 30px;
+    justify-items: center;
+   
+    padding-top: 20px;
+   
+}
+footer p{
+    padding-bottom: 30px;
+    padding-top: 70px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
 
 /* responsive style */
 @media  screen and (max-width:576px) {
@@ -269,6 +335,23 @@ nav{
     
     top: 10%;
     left: 25%;
+}
+.host-conteiner{
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.host-content ul{
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.icon ul{
+    
+    flex-direction: column;
+   
 }
 }
 
