@@ -16,6 +16,12 @@ nav{
     background-color: #1A0B2E;
     
 }
+.color{
+    background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
 .nav-main a{
  text-decoration: none;
@@ -34,7 +40,14 @@ nav{
     padding: 13px 12px;
     border-radius: 26px;
     font-weight: 500;
+    border: none;
+    background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    color: white;
+    transition: transform 1s;
     
+}
+.nav-btn button:hover{
+    transform: translate(5px);
 }
 
 /* banner part */
@@ -43,7 +56,6 @@ nav{
 }
 .bg-main{
     width: 100%;
-    
 }
 
 
@@ -67,7 +79,7 @@ nav{
 }
 .about-content .last{
     margin-bottom: 40px;
-    border-bottom: 1px solid ;
+    border-bottom: 0.1px solid ;
     padding-bottom: 40px;
 }
 .about-conteiner{
@@ -88,6 +100,7 @@ nav{
 .section-tittle{
     text-align: center;
     padding: 30px 0 10px;
+    color: #FFFFFF;
 }
 .grid-section{
     background-color: #230E3D;
@@ -116,9 +129,39 @@ nav{
     grid-column: span 2;
 }
 
-
-
-
+/* video part */
+.video-section{
+    background-color: #1A0B2E;
+    padding-top: 50px;
+}
+.video-conteiner{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    justify-items: center;
+    width: 100%;
+}
+.video-card{
+    max-width: 300px;
+    height: 400px;
+    padding: 10px;
+    margin-bottom: 50px;
+    
+    border-radius: 20px;
+    background-color: #250D44;
+}
+.video-card .video{
+   
+    
+    border-radius: 5px;
+}
+.video-card h3{
+    color: aliceblue;
+}
+.video-card p{
+    color:#FFFFFF ;
+    font-size: 0.8rem;
+}
 
 
 
@@ -139,6 +182,9 @@ nav{
     .fat-grid{
     grid-row: span 1;
     max-height:250px ;
+    }
+    .video-conteiner{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
