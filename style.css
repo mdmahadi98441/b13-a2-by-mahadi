@@ -69,6 +69,7 @@ nav{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 0%;
 }
 .hero-circle{
     position: absolute;
@@ -166,6 +167,7 @@ nav{
     justify-items: center;
     width: 80%;
     margin: auto;
+    text-align: center;
     
 }
 .card h1{
@@ -308,7 +310,7 @@ footer h1{
     font-size: 3rem;
 }
 .icon ul{
-    list-style: none;
+    /* list-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,7 +318,15 @@ footer h1{
     gap: 30px;
     justify-items: center;
    
-    padding-top: 20px;
+    padding-top: 20px; */
+    list-style: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    justify-items: center;
+    gap: 25px;
    
 }
 footer p{
@@ -328,6 +338,9 @@ footer p{
 
 /* responsive style */
 @media  screen and (max-width:576px) {
+    *{
+        margin: 0;
+    }
     .nav-main, .nav-btn{
         display: none;
     }
@@ -341,7 +354,7 @@ footer p{
     }
     .fat-grid{
     grid-row: span 1;
-    max-height:250px ;
+    /* max-height:250px ; */
     }
     .video-conteiner{
         grid-template-columns: repeat(1, 1fr);
@@ -376,7 +389,8 @@ footer p{
 
 .icon ul{
     
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
    
 }
 }
